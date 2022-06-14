@@ -27,5 +27,5 @@ function draw() {
   //background(220);
   image(img1, 300, 300, 16, 16);
   img2 = loadImage('p1.png');
-  image(img2, 100, 100, 30, 30)
+  //image(img2, 100, 100, 30, 30)
 }
