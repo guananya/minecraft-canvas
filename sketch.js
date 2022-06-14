@@ -1,11 +1,5 @@
 let params;
 
-function preload() {
-  params = getURLParams();
-  console.log(params.one);
-  img1 = loadImage(str(params.one));
-}
-
 function setup() {
   let c = createCanvas(256, 256);
   background('lavender');
@@ -19,6 +13,11 @@ function setup() {
     }
     i += 16;
   }
+  
+  params = getURLParams();
+  console.log(params.one);
+  img1 = loadImage(str(params.one));
+  
   image(img1, 0, 0, 16, 16);
   //saveCanvas(c, 'myCanvas', 'png');
   
