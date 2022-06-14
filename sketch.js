@@ -18,11 +18,14 @@ function setup() {
   console.log(params.one);
   img1 = loadImage(str(params.one));
   
-  image(img1, 300, 300, 16, 16);
+  
   //saveCanvas(c, 'myCanvas', 'png');
   
 }
 
 function draw() {
   //background(220);
+  image(img1, 300, 300, 16, 16);
+  img2 = loadImage('p1.png');
+  image(img2, 100, 100, 30, 30)
 }
