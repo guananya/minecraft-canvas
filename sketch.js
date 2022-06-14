@@ -1,7 +1,7 @@
 let params;
 
 function setup() {
-  let c = createCanvas(256, 256);
+  let c = createCanvas(1000, 1000);
   background('lavender');
   //it is 16x16 grid. Each square is 16 in length
   for (i = 0; i<256;) {
