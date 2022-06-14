@@ -18,7 +18,7 @@ function setup() {
   console.log(params.one);
   img1 = loadImage(str(params.one));
   
-  image(img1, 0, 0, 16, 16);
+  image(img1, 300, 300, 16, 16);
   //saveCanvas(c, 'myCanvas', 'png');
   
 }
