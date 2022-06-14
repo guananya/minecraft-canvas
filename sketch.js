@@ -17,7 +17,12 @@ function setup() {
   params = getURLParams();
   console.log(params.one);
   img1 = loadImage(str(params.one));
-  
+  img2 = loadImage(str(params.two));
+  img3 = loadImage(str(params.three));
+  img4 = loadImage(str(params.four));
+  img5 = loadImage(str(params.five));
+  img6 = loadImage(str(params.six));
+  img7 = loadImage(str(params.seven));
   
   //saveCanvas(c, 'myCanvas', 'png');
   
@@ -26,6 +31,13 @@ function setup() {
 function draw() {
   //background(220);
   image(img1, 0, 0, 16, 16);
-  img2 = loadImage('p1.png');
-  //image(img2, 100, 100, 30, 30)
+  image(img2, 16, 0, 16, 16);
+  image(img3, 0, 32, 16, 16);
+  image(img4, 32, 0, 16, 16);
+  image(img5, 0, 16, 16, 16);
+  image(img6, 32, 16, 16, 16);
+  image(img7, 16, 32, 16, 16);
+  image(img8, 48, 32, 16, 16);
+  image(img9, 48, 0, 16, 16);
+  
 }
