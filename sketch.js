@@ -1,3 +1,5 @@
+let params;
+
 function setup() {
   let c = createCanvas(256, 256);
   background('lavender');
@@ -12,7 +14,10 @@ function setup() {
     i += 16;
   }
   
-  saveCanvas(c, 'myCanvas', 'png');
+  //saveCanvas(c, 'myCanvas', 'png');
+  
+  params = getURLParams();
+  console.log(params.name);
   
 }
 
