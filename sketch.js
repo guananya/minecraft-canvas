@@ -24,7 +24,7 @@ function setup() {
   img6 = loadImage(str(params.six));
   img7 = loadImage(str(params.seven));
   img8 = loadImage(str(params.eight));
-  img7 = loadImage9str(params.nine));
+  img9 = loadImagestr(params.nine));
   //saveCanvas(c, 'myCanvas', 'png');
   
 }
