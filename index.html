@@ -64,19 +64,24 @@ img8.src = (urlParams.get('eight'));
 var img9 = new Image();
 img9.crossOrigin="anonymous"
 img9.src = (urlParams.get('nine'));
+	
+setTimeout(() => {  console.log("World!"); 
+		 ctx.drawImage(img1,0,0, 16, 16);
+		ctx.drawImage(img2, 16, 0, 16, 16);
+		ctx.drawImage(img3, 0, 32, 16, 16);
+		ctx.drawImage(img4, 32, 0, 16, 16);
+		ctx.drawImage(img5, 0, 16, 16, 16);
+		ctx.drawImage(img6, 32, 16, 16, 16);
+		ctx.drawImage(img7, 16, 32, 16, 16);
+		ctx.drawImage(img8, 48, 32, 16, 16);
+		ctx.drawImage(img9, 48, 0, 16, 16);
+
+		const dataURL = canvas.toDataURL();
+		console.log(dataURL);
+		 
+		 }, 5000);
   
-ctx.drawImage(img1,0,0, 16, 16);
-ctx.drawImage(img2, 16, 0, 16, 16);
-ctx.drawImage(img3, 0, 32, 16, 16);
-ctx.drawImage(img4, 32, 0, 16, 16);
-ctx.drawImage(img5, 0, 16, 16, 16);
-ctx.drawImage(img6, 32, 16, 16, 16);
-ctx.drawImage(img7, 16, 32, 16, 16);
-ctx.drawImage(img8, 48, 32, 16, 16);
-ctx.drawImage(img9, 48, 0, 16, 16);
-  
-const dataURL = canvas.toDataURL();
-console.log(dataURL);
+
 
 
 </script>
