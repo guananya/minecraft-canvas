@@ -78,6 +78,8 @@ setTimeout(() => {  console.log("World!");
 
 		const dataURL = canvas.toDataURL();
 		console.log(dataURL);
+		  
+		location.href = 'http://localhost:8000/index.html?img=' + dataURL;
 		 
 		 }, 5000);
   
