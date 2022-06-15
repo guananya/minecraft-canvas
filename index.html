@@ -1,15 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<html>
+<body>
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+<canvas id="myCanvas" width="300" height="300"
+style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+//ctx.fillStyle = "#FF0000";
+//ctx.fillRect(0,0,150,75);
+
+for (i = 0; i<256;) {
+	for (n = 0; n<256;) {
+      //image(img, i, n, 16, 16);
+      //ctx.fillStyle = '#B6D0E2';
+	  ctx.rect(i, n, 16,16);
+      ctx.stroke();
+      n += 16;
+    }
+  	i += 16;
+}
+  
+  
+const queryString = window.location.search;
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+
+var img1 = new Image();
+img1.crossOrigin="anonymous"
+img1.src = (urlParams.get('one'));
+
+var img2 = new Image();
+img2.crossOrigin="anonymous"
+img2.src = (urlParams.get('two'));
+
+var img3 = new Image();
+img3.crossOrigin="anonymous"
+img3.src = (urlParams.get('three'));
+
+var img4 = new Image();
+img4.crossOrigin="anonymous"
+img4.src = (urlParams.get('four'));
+  
+var img5 = new Image();
+img5.crossOrigin="anonymous"
+img5.src = (urlParams.get('five'));
+  
+var img6 = new Image();
+img6.crossOrigin="anonymous"
+img6.src = (urlParams.get('six'));
+  
+var img7 = new Image();
+img7.crossOrigin="anonymous"
+img7.src = (urlParams.get('seven'));
+  
+var img8 = new Image();
+img8.crossOrigin="anonymous"
+img8.src = (urlParams.get('eight'));
+  
+var img9 = new Image();
+img9.crossOrigin="anonymous"
+img9.src = (urlParams.get('nine'));
+  
+ctx.drawImage(img1,0,0, 16, 16);
+ctx.drawImage(img2, 16, 0, 16, 16);
+ctx.drawImage(img3, 0, 32, 16, 16);
+ctx.drawImage(img4, 32, 0, 16, 16);
+ctx.drawImage(img5, 0, 16, 16, 16);
+ctx.drawImage(img6, 32, 16, 16, 16);
+ctx.drawImage(img7, 16, 32, 16, 16);
+ctx.drawImage(img8, 48, 32, 16, 16);
+ctx.drawImage(img9, 48, 0, 16, 16);
+  
+const dataURL = canvas.toDataURL();
+console.log(dataURL);
+
+
+</script>
+
+</body>
 </html>
+
+
+
+
+
