@@ -2,7 +2,7 @@ let c = "pink";
 let colorArr = ["pink", "powderblue", "lavender"]
 
 function setup() {
-  let cnv = createCanvas(windowHeight, windowWidth);
+  let cnv = createCanvas(windowWidth, windowHeight);
   cnv.position(0,0)
   background('powderblue');
 }
