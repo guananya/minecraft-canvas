@@ -5,6 +5,8 @@ function setup() {
   let cnv = createCanvas(windowWidth, windowHeight);
   cnv.position(0,0)
   background('powderblue');
+  textSize(50);
+  text('Loading', windowWidth/2, windowHeight/2);
 }
 
 function mouseMoved() {
